@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emilio Masciarelli">
+    <meta name="description" content="Pagina destinada a la venta de viajes y paquetes de turismo nacional e internacional">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="img/compass.png">
+    <title>Viajes Compass</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="buttons-nav">
+            <a href="register.html" target="_BLANK"><button>Register</button></a>
+            <a href="login.html" target="_BLANK"><button>Login</button></a>
+        </div>
+        <nav class="navbar">
+            <a class="logo-name" href="#"><img class="img-logo" src="img/compass.png" alt="Logo Empresa"><h1>Viajes Compass</h1></a>
+            <ul class="container-nav">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container-flights">
+        <div class="container-vuelos-radio">
+            <h2>Vuelos</h2>
+            <div class="inputs-radio">
+                <input type="radio" id="ida-vuelta" name="ida-vuelta-multi" checked>
+                <label for="ida-vuelta">Ida y vuelta</label>
+                <input type="radio" id="ida" name="ida-vuelta-multi">
+                <label for="ida">Solo ida</label>
+                <input type="radio" id="multi" name="ida-vuelta-multi">
+                <label for="multi">Multidestino</label>
+            </div>
+        </div>
+        <div class="origen-destino">
+            <input type="text" id="origen" placeholder="Origen, ingresá Pais o ciudad.">
+            <input type="text" id="destino" placeholder="Destino, lugar de arribo.">
+        </div>
+        <div class="date">
+            <label for="date-ida">Salida</label>
+            <input type="date" id="date-ida">
+            <label for="date-vuelta">Vuelta</label>
+            <input type="date" id="date-vuelta">
+        </div>
+        <div class="btn-flight">
+            <a href="#"><button class="btn-buscar">Buscar</button></a>
+        </div>
+    </section>
+    <section id="destinos" class="galery-section">
+        <h2 class="destinos">principales destinos</h2>
+        <div class="container-galeria">
+            <div class="item-galeria">
+                <img src="img/venecia.jpg" alt="Foto de Venecia" class="img-venecia">
+                <div class="text-item">
+                    <h3>Venecia</h3>
+                    <p>desde $140.000</p>
+                    <a href="#"><button class="btn-destinos">Ver más</button></a>
+                </div>
+            </div>
+            <div class="item-galeria">
+                <img src="img/sidney.jpg" alt="Foto de Sidney" class="img-sidney">
+                <div class="text-item">
+                    <h3>Sidney</h3>
+                    <p>desde $250.000</p>
+                    <a href="#"><button class="btn-destinos">Ver más</button></a>
+                </div>
+            </div>
+            <div class="item-galeria">
+                <img src="img/barcelona.jpg" alt="Foto Sagrada Familia" class="img-barcelona">
+                <div class="text-item">
+                    <h3>Barcelona</h3>
+                    <p>desde $104.000</p>
+                    <a href="#"><button class="btn-destinos">Ver más</button></a>
+                </div>
+            </div>
+            <div class="item-galeria">
+                <img src="img/cuba.jpg" alt="La Havana Cuba" class="img-cuba">
+                <div class="text-item">
+                    <h3>La Havana</h3>
+                    <p>desde $90.000</p>
+                    <a href="#"><button class="btn-destinos">Ver más</button></a>
+                </div>
+            </div>
+            <div class="item-galeria">
+                <img src="img/capadocia.jpg" alt="Viaje en globo en Capadocia" class="img-capadocia">
+                <div class="text-item">
+                    <h3>Capadocia</h3>
+                    <p>desde $160.000</p>
+                    <a href="#"><button class="btn-destinos">Ver más</button></a>
+                </div>
+            </div>
+            <div class="item-galeria">
+                <img src="img/disney.jpg" alt="Foto de Disney" class="img-disney">
+                <div class="text-item">
+                    <h3>Disney</h3>
+                    <p>desde $110.000</p>
+                    <a href="#"><button class="btn-destinos">Ver más</button></a>
+                </div>
+            </div>
+            <div class="item-galeria">
+                <img src="img/dubai.jpg" alt="Foto de Dubai" class="img-dubai">
+                <div class="text-item">           
+                    <h3>Dubai</h3>
+                    <p>desde $195.000</p>
+                    <a href="#"><button class="btn-destinos">Ver más</button></a>
+                </div>
+            </div>
+            <div class="item-galeria">
+                <img src="img/londres.jpg" alt="Big Ben y London Eye" class="img-londres">
+                <div class="text-item">
+                    <h3>Londres</h3>
+                    <p>desde $120.000</p>
+                    <a href="#"><button class="btn-destinos">Ver más</button></a>
+                </div>
+            </div>
+            <div class="item-galeria">
+                <img src="img/sanandres.jpg" alt="Playa de San Andres" class="img-sanandres">
+                <div class="text-item">
+                    <h3>San Andrés</h3>
+                    <p>desde $85.000</p>
+                    <a href="#"><button class="btn-destinos">Ver más</button></a>
+                </div>    
+            </div>
+        </div>
+        <div>
+            <a href="#" class="btn-otros-destinos"><button>Otros destinos</button></a>
+        </div>
+        <div class="divisor"></div>
+    </section>
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <div class="container-contact">
+            <div class="whatsapp">
+                <img src="img/whatsapp.png" alt="Logo whatsapp">
+                <div class="phones">
+                <p class="phone-p1">+54 9 3516889900</p>
+                <p class="phone-p2">+54 9 3516778811</p>
+                </div>
+            </div>
+            <div class="section-consulta">
+                <form class="form-consult">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="nombre" placeholder="Tu nombre" required/>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required/>
+                <label for="country" class="country">Pais:</label>
+                <select id="country" name="country">
+                    <option value="argentina">Argentina</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="chile">Chile</option>
+                </select>
+                <label for="consulta" class="consulta">Consulta</label>
+                <textarea id="consulta" name="consulta" placeholder="Ponga su consulta aquí" required></textarea>
+                <input type="submit" value="Enviar" class="enviar">
+                </form>
+            </div>
+            <div class="ubication">
+                <div class="logo-adress">
+                    <img src="img/ubicacion.png" alt="Logo ubicacion">
+                    <div class="text-adress">
+                        <p class="adress-p1">Avenida Gral Paz 109</p>
+                        <p class="adress-p2">Córdoba, Argentina</p>
+                    </div>
+                </div>
+                <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=300&amp;height=250&amp;hl=en&amp;q=avenida general paz 109 cordoba argentina&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div><style>.mapouter{position:relative;text-align:right;width:300px;height:250px;}.gmap_canvas {overflow:hidden;background:none!important;width:300px;height:250px;}.gmap_iframe {width:300px!important;height:250px!important;}</style></div>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <h3 class="title-suscribe">Suscríbete y recibe nuestras ofertas!!</h3>
+                <form class="suscribe">
+                    <input class="email" type="email" placeholder="Dirección de correo" name="mail" required>
+                    <input class="submit-email" type="submit" value="Suscribirse">
+                </form>
+            </div>
+            <div class="redes">
+                <a href="https://www.instagram.com/emi_masciarelli/"  target="_BLANK"><img src="img/instagram.png" alt="Logo Instagram"></a>
+                <a href="#"><img src="img/twitter.png" alt="Logo Twitter"></a>
+                <a href="#"><img src="img/youtube.png" alt="Logo Youtube"></a>
+                <a href="#"><img src="img/facebook.png" alt="Logo Facebook"></a>
+            </div>
+            <div class="copy-logo">
+                <p>Copyright © 2022 Viajes Compass</p>
+                <img src="img/compass.png" alt="Logo Viajes Compass">
+            </div>
+        </footer>
+    </section>
+</body>
+</html>

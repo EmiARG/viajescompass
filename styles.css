@@ -1,0 +1,656 @@
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+header {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background-color: #ffffff;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.header-container{
+    position: sticky;
+    top: 0%;
+    z-index: 9999;
+}
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3px;
+}
+.img-logo {
+    height: 45px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.logo-name {
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+.container-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 60vw;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+.buttons-nav {
+    padding-top: 0.5%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3%;
+}
+.buttons-nav button {
+    width: 110px;
+    border-radius: 15px;
+    height: auto;
+    background-color: #ffffff;
+}
+.buttons-nav button:hover {
+    background-color: #000000;
+    color: rgb(167, 239, 232);
+    cursor: pointer;
+    transition: 0.8s;
+}
+.container-nav li a:hover {
+    color: rgb(167, 239, 232);
+    background-color: black;
+    transition: 0.8s;
+}
+.container-flights {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: 98%;
+    height: 550px;
+    padding-top: 1.5%;
+    background-image: url(img/mykonos.jpg);
+    background-size: cover;
+}
+.container-vuelos-radio {
+    width: 50%;
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(167, 239, 232, 0.4);
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.origen-destino {
+    width: 50%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: rgb(167, 239, 232, 0.4);
+}
+#origen {
+    font-size: 1.5em;
+    border-radius: 10px;
+    border-style: none;
+}
+#destino {
+    margin-top: 20px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    border-style: none;
+}
+.date {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: rgb(167, 239, 232, 0.4);
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.btn-flight {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-left: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: rgb(167, 239, 232, 0.4);
+    padding-bottom: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.btn-buscar {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.btn-buscar:hover {
+    background-color: black;
+    color: rgb(167, 239, 232);
+    transition: 1s;
+}
+.galery-section {
+    width: 100%;
+}
+.destinos {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.container-galeria {
+    display: grid;
+    width: 98%;    
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: 30px;
+    grid-auto-rows: 350px;
+    grid-gap: 20px;
+}
+.container-galeria div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item-galeria:nth-child(4) {
+    grid-column-start: span 2;
+}
+.item-galeria:nth-child(5) {
+    grid-row-start: span 2;
+}
+.item-galeria:nth-child(9) {
+    grid-column-start: span 2;
+}
+.item-galeria {
+    position: relative;
+}
+.text-item {
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    background-color: rgb(167, 239, 232, 0.5);
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-top-right-radius: 15px;
+}
+.btn-destinos {
+    width: 130px;
+    height: 30px;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 15px;
+    font-size: 15px;
+    background-color: #000000;
+    color: rgb(167, 239, 232);
+}
+.text-item a {
+    padding-left: 22%;
+}
+.btn-otros-destinos {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.btn-otros-destinos button {
+    width: 40%;
+    border-style: none;
+    height: 60px;
+    background-color: rgb(167, 239, 232);
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+}
+.btn-otros-destinos button:hover {
+    background-color: #000000;
+    color: rgb(167, 239, 232);
+    transition: 1.2s;
+}
+.divisor {
+    display: flex;
+    align-self: center;
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 20px;
+    background-color: rgb(167, 239, 232);
+    margin-top: 30px;
+}
+.contacto {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: 98%;
+}
+.contacto h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.container-contact {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.whatsapp {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    width: 30%;
+}
+.whatsapp img {
+    width: 80px;
+    height: 80px;
+    margin-right: 25px;
+    align-self: center;
+}
+.phones {
+    font-size: 1.6em;
+    font-weight: bold;
+    align-items: center;
+    align-self: center;
+    margin-right: 25px;
+}
+.phone-p1 {
+    margin-bottom: 0;
+}
+.phone-p2 {
+    margin-top: 0;
+}
+.section-consulta {
+    background-color: rgb(167, 239, 232);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+    margin-top: 80px;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+}
+.form-consult {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#name, #apellido {
+    width: 90%;
+}
+#name, #apellido, #country, #consulta {
+    border-radius: 15px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: rgb(167, 239, 232);
+    color: #000000;
+    text-transform: uppercase;
+    border: 5px solid #000000;
+}
+#country:hover {
+    cursor: pointer;
+}
+#consulta {
+    width: 90%;
+    height: 100px;
+}
+.enviar {
+    width: 50%;
+    border: solid;
+    border-color: #000000;
+    font-size: 1.2em;
+    background-color: rgb(167, 239, 232);
+    border-radius: 15px;
+    font-weight: bold;
+}
+.enviar:hover {
+    background-color: #000000;
+    transition: 1.2s;
+    color: rgb(167, 239, 232);
+    cursor: pointer;
+}
+.ubication {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    margin-right: 2%;
+}
+.logo-adress {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.logo-adress img {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+}
+.text-adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.adress-p1 {
+    margin-bottom: 0;
+}
+.adress-p2 {
+    margin-top: 0;
+}
+.gmap_canvas {
+    border: solid 10px rgb(167, 239, 232);
+    border-radius: 15px;
+}
+.title-suscribe {
+    text-align: center;
+    font-size: 1.5em;
+}
+.suscribe {
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.suscribe .email {
+    width: 50%;
+    font-size: 1.5em;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: 3px solid;
+    outline: none;
+}
+.suscribe .submit-email {
+    width: 90px;
+    border-radius: 5px;
+    background-color: #000000;
+    color: rgb(167, 239, 232);
+    cursor: pointer;
+}
+footer {
+    background-color: rgb(167, 239, 232);
+    padding-top: 30px;
+    margin-bottom: 8px;
+}
+footer img {
+    width: 80px;
+    height: 80px;
+}
+.redes {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.copy-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: bold;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 1040px){
+    .container-contact {
+       flex-direction: column;
+       align-items: center;
+    }
+    .whatsapp {
+        margin-right: 0;
+        width: 95%;
+        margin-top: 50px;
+    }
+    .section-consulta {
+        width: 60%;
+        margin-top: 30px;
+    }
+    .ubication {
+        width: 95%;
+    }
+}
+@media (max-width: 970px) {
+    .navbar {
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 870px){
+    .container-flights {
+        height: 400px;
+    }
+    .navbar {
+        font-size: 0.7em;    
+    }
+    .buttons-nav {
+        justify-content: center;
+    }
+    .container-vuelos-radio {
+        width: 90%;
+    }
+    .origen-destino {
+        width: 90%;
+    }
+    .date {
+        width: 90%;
+    }
+    .btn-flight {
+        width: 90%;
+    }
+    .container-galeria {
+        display: grid;
+        width: 98%;    
+        grid-template-columns: repeat(2, 1fr);
+    }   
+    .item-galeria:nth-child(4) {
+        grid-column-start: span 1;
+    }
+    .item-galeria:nth-child(5) {
+        grid-row-start: span 1;
+    }
+}
+@media (max-width: 640px){
+    .container-galeria {
+        grid-auto-rows: 250px;
+        grid-gap: 10px;
+    }
+    .text-item {
+        width: 200px;
+        height: 110px;
+        font-size: 1em;
+    }
+    .item-galeria:first-child {
+        grid-column-start: span 2;
+    }
+    .item-galeria:nth-child(2) {
+        grid-column-start: span 2;
+    }
+    .item-galeria:nth-child(6) {
+        grid-column-start: span 2;
+    }
+    .item-galeria:nth-child(7) {
+        grid-column-start: span 2;
+    }
+    .item-galeria:nth-child(3) {
+        display: none;
+    }
+    .item-galeria:nth-child(4) {
+        display: none;
+    }
+    .item-galeria:nth-child(5) {
+        display: none;
+    }
+    .item-galeria:nth-child(8) {
+        display: none;
+    }
+    .item-galeria:nth-child(9) {
+        display: none;
+    }
+    .btn-otros-destinos button {
+        display: flex;
+        justify-content: center;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .section-consulta {
+        width: 80%;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 491px){
+    .container-vuelos-radio {
+        flex-wrap: wrap;
+    }
+    .inputs-radio {
+        margin-bottom: 20px;
+    }
+    .container-flights {
+        height: 300px;
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 475px) {
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 130px;
+    }
+    .buttons-nav {
+        justify-content: center;
+        background-color: #ffffff;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        margin-bottom: 0;
+        margin-top: 2%;
+        border-top: solid black 3px;
+        border-right: black solid 3px;
+        border-left: black solid 3px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .buttons-nav button {
+        border-bottom: black solid 2px;
+        background-color: rgb(167, 239, 232)
+    }
+    .navbar {
+        flex-direction: column;
+        align-content: center;
+    }
+    .logo-name {
+        width: 98%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+    .img-logo {
+        padding-left: 0;
+    }
+    .container-nav {
+        width: 96%;
+        padding: 2%;
+        background-color: rgb(167, 239, 232);
+        border: solid 3px black;
+        border-radius: 15px;
+        margin-right: 5vw;
+        margin-left: 5vw;
+        margin-top: 0;
+    }
+    header {
+        margin-top: 0;
+        border-radius: 0;
+        border-bottom: black 3px solid;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .suscribe .email {
+        width: 70%;
+    }
+    .redes {
+        gap: 10px;
+    }
+    .redes a {
+        width: 20%;
+    }
+    footer img {
+        width: 65px;
+        height: 65px;
+    }
+}
+@media (max-width: 396px) {
+    .inputs-radio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-flights {
+        height: 320px;
+    }
+    .destinos {
+        font-size: 1.5em;
+    }
+    .text-item a {
+        padding-left: 5%;
+    }
+    .text-item {
+        width: 150px;
+    }
+    .destinos {
+        text-align: center;
+    }
+}

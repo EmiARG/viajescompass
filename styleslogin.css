@@ -1,0 +1,73 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(img/capadocia.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    
+}
+.fondo {
+    background-color: rgb(167, 239, 232, 0.6);
+    text-align: center;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    width: 90%;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+h2 {
+    padding-top: 20px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: left;
+    font-weight: bold;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form label {
+    font-size: 1.5em;
+}
+input {
+    font-size: 1.5em;
+    border-radius: 15px;
+    width: 390px;
+}
+a button {
+    width: 70%;
+    height: 40px;
+    background-color: #000000;
+    color: rgb(167, 239, 232);
+    border-radius: 15px;
+    font-size: 1.3em;
+    margin-top: 20px;
+    cursor: pointer;
+}
+img {
+    width: 250px;
+    height: 250px;
+}
+.logo-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    padding-bottom: 30px;
+}
+@media (max-width: 810px) {
+    .container {
+        flex-direction: column;
+    }
+}
+@media (max-width: 500px) {
+    input {
+        width: 95%;
+    }
+}
